@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.clockcirc1 {
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.outerdots p {
+    width: 2rem;
+    height: 1rem;
+    background-color: transparent;
+    transform-origin: 0 0;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 2px;
+    position: absolute;
+    transform: rotate(calc(6deg*var(--xx)));
+}
+
+.outerdots p::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    /* background-color: #333f99; */
+    /* background: linear-gradient(to bottom, #8F9396 1%, #111619 3%, #434949 5%, #BABEC1 14%, #E2E6E9 19%, #E2E6E9 22%, #828689 40%); */
+    background: linear-gradient(to bottom, #8F9396 1%, #111619 3%, #434949 5%, #BABEC1 14%, #434949 19%, #434949 22%, #434949 40%);
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    box-shadow: 3px 5px 5px;
+    inset: 97%;
+}
