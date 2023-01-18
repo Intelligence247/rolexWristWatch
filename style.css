@@ -48,3 +48,56 @@ body {
     box-shadow: 3px 5px 5px;
     inset: 97%;
 }
+
+.clockcircNumbers {
+    position: absolute;
+    transform-origin: 0 0;
+    width: 19.2rem;
+    height: 19.2rem;
+    border-radius: 50%;
+    background-color: #333f99;
+    inset: 0.4rem;
+    /* background: linear-gradient(to bottom, #8F9396 1%, #111619 3%, #434949 5%, #BABEC1 14%, #E2E6E9 19%, #E2E6E9 22%, #828689 40%);
+    background: linear-gradient(to bottom, #8F9396 2%, #111619 4%, #434949 9%, #BABEC1 15%, #E2E6E9 19%, #E2E6E9 22%, #373D3D 46%);
+    background: repeating-linear-gradient(90deg,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.3) 1px,
+            transparent 1px,
+            transparent 3px,
+            rgba(0, 0, 0, 0.3) 3px,
+            rgba(0, 0, 0, 0.2) 4px,
+            transparent 4px,
+            transparent 6px,
+        );
+    background: linear-gradient(90deg,
+            #0A181A 46%,
+            #A3A8AB 50%,
+            #F9FEFF 72%,
+            #FAFBFF 80%,
+            #D6DBDC 90%,
+            #0A0B10 94%); */
+    background: linear-gradient(-138deg,
+            #373D7D 0%,
+            #2E305B 22%,
+            #2E305B 23%,
+            #2E305B 64%,
+            #373D7D 100%);
+}
+
+.minutecounts {
+    /* position: absolute; */
+
+}
+
+.minutecounts p {
+    position: absolute;
+    text-align: center;
+    transform-origin: left;
+    top: 50%;
+    inset: 10%;
+    left: 50%;
+    color: white;
+    font-size: 2rem;
+    transform: rotate(calc(6deg*var(--xxmin)));
+
+}
