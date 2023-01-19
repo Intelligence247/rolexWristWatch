@@ -98,6 +98,8 @@ body {
     left: 50%;
     color: white;
     font-size: 2rem;
-    transform: rotate(calc(6deg*var(--xxmin)));
+    transform: rotate(calc(30deg*var(--xxmin)));
 
 }
+
+/* https://codepen.io/chrisota/pen/OJJbdbR */
