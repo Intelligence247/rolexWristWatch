@@ -323,7 +323,7 @@ body {
     font-size: 1.5rem;
     position: absolute;
     top: 45%;
-    left: 18rem;
+    left: 17.5rem;
     bottom: 0;
     background-color: white;
     width: max-content;
@@ -385,5 +385,57 @@ body {
     top: 0;
 }
 
+.circCenter {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #d0d0d0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: 2;
+}
+
+.minutes,
+.hours {
+    width: 0.5rem;
+    height: 5rem;
+    background-color: #d0d0d0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: 1;
+    border-radius: 10% 10% 100% 100%;
+}
+
+.name,
+.name2 {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    font-size: 1.5rem;
+    top: 38%;
+    right: 40%;
+}
+
+.name2 {
+    font-size: 9px;
+    top: 44.5%;
+    right: 37%;
+}
+
+.comments {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    font-size: 9px;
+    text-align: center;
+    bottom: 30%;
+    right: 35%;
+
+}
 
 /* https://codepen.io/chrisota/pen/OJJbdbR */
