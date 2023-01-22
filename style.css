@@ -13,8 +13,8 @@ body {
 }
 
 .clockcirc1 {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     background-color: white;
     border-radius: 50%;
     position: relative;
@@ -52,11 +52,11 @@ body {
 .clockcircNumbers {
     position: absolute;
     transform-origin: 0 0;
-    width: 19.2rem;
-    height: 19.2rem;
+    width: 24rem;
+    height: 24rem;
     border-radius: 50%;
     background-color: #333f99;
-    inset: 0.4rem;
+    inset: 0.5rem;
     /* background: linear-gradient(to bottom, #8F9396 1%, #111619 3%, #434949 5%, #BABEC1 14%, #E2E6E9 19%, #E2E6E9 22%, #828689 40%);
     background: linear-gradient(to bottom, #8F9396 2%, #111619 4%, #434949 9%, #BABEC1 15%, #E2E6E9 19%, #E2E6E9 22%, #373D3D 46%);
     background: repeating-linear-gradient(90deg,
@@ -89,7 +89,7 @@ body {
 
 }
 
-.minutecounts p {
+/* .minutecounts p {
     position: absolute;
     text-align: center;
     transform-origin: left;
@@ -99,7 +99,84 @@ body {
     color: white;
     font-size: 2rem;
     transform: rotate(calc(30deg*var(--xxmin)));
+    display: inline;
+}
 
+.minutecounts .withnum span {
+    transform: rotate(calc(-30deg*var(--xxmin)));
+} */
+.num {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    text-align: center;
+    inset: 10px;
+    color: white;
+    font-size: 2rem;
+}
+
+
+.nonum {
+    width: 5px;
+    transform-origin: 0 0;
+    left: 50%;
+    top: 50%;
+    height: 46%;
+    background-color: transparent;
+}
+
+.nonum::after {
+    width: 7px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background: linear-gradient(to bottom, #E2E6E9 50%, #828689 0%, #E2E6E9 5%, #BABEC1 100%, #E2E6E9 1%, #E2E6E9 2%, #828689 0%);
+}
+
+.nonum {
+    position: absolute;
+
+}
+
+.diff {
+
+    transform-origin: 0 0;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    height: 46%;
+    width: 10px;
+    background-color: transparent;
+
+}
+
+/* top right bottom left  */
+.diff::after {
+    content: '';
+    position: absolute;
+    border-width: 0rem 1.2rem 1.9rem 1.2rem;
+    bottom: 0;
+    right: -1rem;
+    border-color: transparent transparent #E2E6E9 transparent;
+    border-style: solid;
+    /* background: linear-gradient(to bottom, #E2E6E9 50%, #828689 0%, #E2E6E9 5%, #BABEC1 100%, #E2E6E9 1%, #E2E6E9 2%, #828689 0%); */
+
+}
+
+.diff::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #E2E6E9;
+    position: absolute;
+    bottom: 0;
+    box-shadow: #333 2px 0px 9px 2px;
+    z-index: 1;
+    left: -0.05rem;
+    bottom: 0.1rem;
 }
 
 /* https://codepen.io/chrisota/pen/OJJbdbR */
