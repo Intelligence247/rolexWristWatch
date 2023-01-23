@@ -344,10 +344,12 @@ body {
     position: absolute;
     /* background: rgba(255, 255, 255, 0.1); */
     /* background: linear-gradient(45deg, rgba(255, 255, 255, .1), rgba(255, 255, 250, .2)); */
-    background: repeating-linear-gradient(60deg, transparent, transparent, transparent, transparent, transparent, rgba(255, 255, 255, 0.1), transparent 40%);
+    /* background: repeating-linear-gradient(60deg, transparent, transparent, transparent, transparent, transparent, rgba(255, 255, 255, 0.009), transparent 40%); */
+    background-color: rgba(255, 255, 255, 0.002);
     z-index: 30;
-    border: 1px solid rgb(255, 255, 255);
+    border: 0.2px solid rgba(255, 255, 255, 0.01);
     border-radius: 10px;
+    z-index: 3;
 }
 
 .king {
