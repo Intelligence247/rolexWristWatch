@@ -31,3 +31,23 @@ for (let i = 0; i <= 12; i++) {
 
     }
 }
+
+// seconds, minute, and hour rotation
+const minutes = document.querySelector('.minutes')
+const hours = document.querySelector('.hours')
+const seconds = document.querySelector('.seconds')
+
+seconds.style.transform = `rotate(${date.getSeconds() * 6 - 180}deg)`;
+minutes.style.transform = `rotate(${date.getMinutes() * 6 - 180}deg)`;
+hours.style.transform = `rotate(${(date.getHours() * 30 - 180) + date.getMinutes() / 2}deg)`;
+seconds.style.transition = 'all 1s linear'
+
+setInterval((xx) => {
+    let date = new Date();
+    // let sec = date.getSeconds()
+    seconds.style.transform = `rotate(${(date.getSeconds() * 6) - 180}deg)`;
+    minutes.style.transform = `rotate(${date.getMinutes() * 6 - 180}deg)`;
+    hours.style.transform = `rotate(${(date.getHours() * 30 - 180) + date.getMinutes() / 2}deg)`;
+}, 1000);
+// https://www.itu.int/en/history/Pages/HistoricalFiguresInTelecommunications.aspx
+
