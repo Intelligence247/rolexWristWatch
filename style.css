@@ -397,7 +397,7 @@ body {
     position: absolute;
     top: 48.5%;
     right: 49%;
-    z-index: 2;
+    z-index: 4;
 
 }
 
@@ -421,6 +421,9 @@ body {
     width: .5rem;
     transform: rotate(40deg);
     z-index: 4;
+    background-color: white;
+    border: 2px solid #d0d0d0;
+
 
 }
 
@@ -431,7 +434,6 @@ body {
     background-color: #8F9396;
     top: 2rem;
     right: -5px;
-    z-index: 3;
     border-radius: 50%;
 }
 
@@ -441,7 +443,6 @@ body {
     width: 49%;
     height: 1px;
     position: absolute;
-    z-index: 5;
     transform-origin: 0 0;
     top: 50%;
     right: 4%;
@@ -504,6 +505,16 @@ body {
     right: 37%;
 }
 
+.minutes::before {
+    background-color: white;
+    height: 3rem;
+    width: 0.3rem;
+    position: absolute;
+    top: 1.7rem;
+    right: 2.5px;
+    content: '';
+}
+
 .comments {
     color: white;
     display: flex;
@@ -516,6 +527,8 @@ body {
     bottom: 30%;
     right: 35%;
 }
+
+
 
 
 
