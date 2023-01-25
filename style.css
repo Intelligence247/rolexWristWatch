@@ -6,10 +6,20 @@
 
 body {
     background-color: #333;
-    height: 100vh;
-    width: 100vw;
     display: grid;
     place-items: center;
+    /* height: 40rem; */
+    /* width: 85rem; */
+    width: 100vw;
+    height: 100vh;
+
+}
+
+main {
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    position: relative;
 }
 
 .clockcirc1 {
@@ -19,6 +29,7 @@ body {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
+    margin: auto;
 
 }
 
@@ -529,7 +540,7 @@ body {
 }
 
 
-.wristband p:first-child {
+.wristband p.center1 {
     width: 4rem;
     height: 3rem;
     border-radius: 7% / 0 0 100% 100%;
@@ -549,12 +560,16 @@ body {
             #353638 89%,
             #F4F8F9 93%,
             #000100 94%);
+    background-color: yellow;
     margin: auto;
     /* margin-bottom: -1rem; */
     rotate: 360deg;
+    position: absolute;
+    top: 3rem;
+    bottom: 4rem;
 }
 
-.wristband p:nth-child(2) {
+.wristband p.center2 {
     height: 5rem;
     width: 16rem;
     background-image:
@@ -572,8 +587,71 @@ body {
     box-shadow: black 0px 0px 5px 1px;
     /* border-radius: 5% / 0 0 100% 100%; */
     border-radius: 20% 20% 20% 15%;
-    margin: auto;
-    margin-bottom: -4rem;
+    position: absolute;
+    top: -2rem;
+    left: 4.5rem;
+}
+
+.bothEdge p.left1 {
+    width: 4rem;
+    height: 7rem;
+    /* border-radius: 500px 0% 0% 0%; */
+    background-image:
+        linear-gradient(180deg,
+            #2D3132 5%,
+            #7B7B7D 0%,
+            #B1B2B4 6%,
+            #CFCFD1 30%,
+            #C4C4C6 60%,
+            #CFCFD1 89%,
+            #CFCFD1 94%,
+            #ECEDEF 96%,
+            #C3C3C5 97%,
+            #CFCFD1 99%);
+    position: absolute;
+}
+
+.bothEdge p.left1::after {
+    content: '';
+    position: absolute;
+    /* top right bottom left  */
+    border-width: 0rem 5rem 9rem 5rem;
+    border-color: transparent transparent red transparent;
+    z-index: 6;
+
 }
 
 /* https://codepen.io/chrisota/pen/OJJbdbR */
+
+
+
+
+/* background: linear-gradient(180deg,
+            #F7F7F7 0%,
+            #575B5E 33%,
+            #000000 34%,
+            #000000 40%,
+            #EDEDEF 40%,
+            #EDEDEF 41%,
+            #000000 42%,
+            #202123 42%,
+            #878B8C 43%,
+            #000000 44%,
+            #45494A 45%,
+            #D9DADC 47%,
+            #000000 48%,
+            #000000 52%,
+            #D4D5D7 53%,
+            #E1E1E1 64%,
+            #E1E1E1 74%,
+            #9B9C9E 91%,
+            #000000 92%,
+            #000000 96%,
+            #A7A8AA 98%,
+            #222828 100%);
+            
+             box-shadow:
+        inset -1px 0 1px 0px rgba(0, 0, 0, 0.5),
+        inset 1px 0 1px 0px rgba(0, 0, 0, 0.5);
+        
+            Has a special purpose*/
