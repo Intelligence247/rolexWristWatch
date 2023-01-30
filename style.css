@@ -356,12 +356,15 @@ main {
     /* background: rgba(255, 255, 255, 0.1); */
     /* background: linear-gradient(45deg, rgba(255, 255, 255, .1), rgba(255, 255, 250, .2)); */
     /* background: repeating-linear-gradient(60deg, transparent, transparent, transparent, transparent, transparent, rgba(255, 255, 255, 0.009), transparent 40%); */
-    background-color: rgba(255, 255, 255, 0.002);
+    background-color: rgba(255, 255, 255, 0.009);
+    opacity: .4;
     z-index: 30;
     border: 0.2px solid rgba(255, 255, 255, 0.01);
     border-radius: 10px;
     z-index: 3;
 }
+
+
 
 .king {
     position: absolute;
@@ -588,11 +591,12 @@ main {
     /* border-radius: 5% / 0 0 100% 100%; */
     border-radius: 20% 20% 20% 15%;
     position: absolute;
-    top: -2rem;
+    top: -1rem;
     left: 4.5rem;
 }
 
-.bothEdge p.left1 {
+.bothEdge p.left1,
+.bothEdge p.right1 {
     width: 4rem;
     height: 7rem;
     /* border-radius: 500px 0% 0% 0%; */
@@ -602,30 +606,44 @@ main {
             #7B7B7D 0%,
             #B1B2B4 6%,
             #CFCFD1 30%,
-            #C4C4C6 60%,
-            #CFCFD1 89%,
-            #CFCFD1 94%,
-            #ECEDEF 96%,
-            #C3C3C5 97%,
-            #CFCFD1 99%);
+            #2D3132 80%,
+            #7B7B7D 99%);
     position: absolute;
+    left: 2rem;
+    top: -1rem;
+    box-shadow: #333 0.5px 0px 10px;
+
+}
+
+.bothEdge p.right1 {
+    left: 20rem;
+    background-color: red;
+
 }
 
 .bothEdge p.left1::after {
     content: '';
     position: absolute;
     /* top right bottom left  */
-    border-width: 0rem 5rem 9rem 5rem;
-    border-color: transparent transparent red transparent;
-    z-index: 6;
+    border-width: 0rem 0rem 9rem 2rem;
+    border-color: transparent transparent transparent #333333;
+    border-style: solid;
+
+
+}
+
+.bothEdge p.right1::after {
+    content: '';
+    position: absolute;
+    /* top right bottom left  */
+    border-width: 0rem 0rem 9rem 2rem;
+    border-color: transparent transparent transparent #333333;
+    border-style: solid;
+
 
 }
 
 /* https://codepen.io/chrisota/pen/OJJbdbR */
-
-
-
-
 /* background: linear-gradient(180deg,
             #F7F7F7 0%,
             #575B5E 33%,
