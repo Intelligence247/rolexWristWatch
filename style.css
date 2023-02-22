@@ -544,37 +544,34 @@ main {
 
 
 .wristband p.center1 {
-    width: 4rem;
-    height: 3rem;
+    width: 5rem;
+    height: 1rem;
     border-radius: 7% / 0 0 100% 100%;
     background-image:
         linear-gradient(180deg,
             #9B9C9E 0%,
             #D6D7D9 12%,
-            #3B3F40 18%,
+            #000100 18%,
             #161A1B 20%,
             #363A3B 22%,
             #393D3E 23%,
             #717274 42%,
             #D7D8DA 74%,
             #D7D8DA 81%,
-            #5D6162 83%,
+            #000100 83%,
             #5C5D5F 86%,
             #353638 89%,
             #F4F8F9 93%,
             #000100 94%);
-    background-color: yellow;
-    margin: auto;
-    /* margin-bottom: -1rem; */
     rotate: 360deg;
     position: absolute;
-    top: 3rem;
-    bottom: 4rem;
+    top: -1.8rem;
+    left: 10rem;
 }
 
 .wristband p.center2 {
     height: 5rem;
-    width: 16rem;
+    width: 15rem;
     background-image:
         linear-gradient(180deg,
             #7F8384 0%,
@@ -592,7 +589,7 @@ main {
     border-radius: 20% 20% 20% 15%;
     position: absolute;
     top: -1rem;
-    left: 4.5rem;
+    left: 5rem;
 }
 
 .bothEdge p.left1,
@@ -616,8 +613,8 @@ main {
 }
 
 .bothEdge p.right1 {
-    left: 20rem;
-    background-color: red;
+    left: 19rem;
+
 
 }
 
@@ -636,11 +633,63 @@ main {
     content: '';
     position: absolute;
     /* top right bottom left  */
-    border-width: 0rem 0rem 9rem 2rem;
-    border-color: transparent transparent transparent #333333;
-    border-style: solid;
+border-bottom: 9rem solid transparent;
+border-right: 2rem solid #333;
+border-left: 0rem solid transparent;
+border-top: 0rem solid transparent;
+/* border: transparent #333 transparent transparent;
+border-width: 0rem 2rem 9rem 0rem;
+border-style: solid; */
+right: 0;
+
+}
+
+.bothEdge p.right2{
+    background-image:
+    linear-gradient(180deg,
+        #2D3132 5%,
+        #7B7B7D 0%,
+        #B1B2B4 6%,
+        #CFCFD1 30%,
+        #2D3132 80%,
+        #7B7B7D 99%);
+    height: 4rem;
+    width: 3.8rem;
+    position: absolute;
+    right: 6rem;
+    top: -4rem;
+    border-radius: 0% 20% 20% 0%;
+
+}
+.bothEdge p.right2::after{
+    content:'';
+    border-bottom: 4rem solid transparent;
+border-right: 0.5rem solid #333;
+border-left: 0rem solid transparent;
+border-top: 0rem solid transparent;
+right: 0;
+position: absolute;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.wristband2{
+    position: absolute;
+    bottom: 0;
+    transform: rotate(180deg);
+    right:0 ;
+    z-index: -1;
 }
 
 /* https://codepen.io/chrisota/pen/OJJbdbR */
