@@ -544,6 +544,29 @@ main {
 
 
 .wristband p.center1 {
+    height: 5rem;
+    width: 15rem;
+    background-image:
+        linear-gradient(180deg,
+            #7F8384 0%,
+            #7B7B7D 0%,
+            #B1B2B4 6%,
+            #CFCFD1 30%,
+            #C4C4C6 60%,
+            #2D3132 89%,
+            #3F4042 94%,
+            #ECEDEF 96%,
+            #C3C3C5 97%,
+            #606163 99%);
+    box-shadow: black 0px 0px 5px 1px;
+    /* border-radius: 5% / 0 0 100% 100%; */
+    border-radius: 20% 20% 20% 15%;
+    position: absolute;
+    /* top: -1rem; */
+    left: 5rem;
+}
+
+.wristband p.center2 {
     width: 4.85rem;
     height: 4rem;
     border-radius: 7% / 0 0 100% 100%;
@@ -577,29 +600,7 @@ main {
     left: 10rem;
 }
 
-.wristband p.center2 {
-    height: 5rem;
-    width: 15rem;
-    background-image:
-        linear-gradient(180deg,
-            #7F8384 0%,
-            #7B7B7D 0%,
-            #B1B2B4 6%,
-            #CFCFD1 30%,
-            #C4C4C6 60%,
-            #2D3132 89%,
-            #3F4042 94%,
-            #ECEDEF 96%,
-            #C3C3C5 97%,
-            #606163 99%);
-    box-shadow: black 0px 0px 5px 1px;
-    /* border-radius: 5% / 0 0 100% 100%; */
-    border-radius: 20% 20% 20% 15%;
-    position: absolute;
-    /* top: -1rem; */
-    left: 5rem;
-}
-.wristband p.center3{
+.wristband p.center3,.wristband p.center4, .wristband p.center5{
     /* border-radius: 7% / 0 0 100% 100%; */
     background-image:
         linear-gradient(180deg,
@@ -620,16 +621,48 @@ main {
     /* rotate: 360deg; */
     transform: rotate3d(100deg);
     position: absolute;
-    top: -6.5rem;
+    top: -4.6rem;
     left: 10.08rem;
     width: 4.85rem;
-    height: 3rem;
+    height: 1rem;
 
+}
+.wristband p.center4{
+    background-image:
+        linear-gradient(180deg,
+            #9B9C9E 0%,
+            #D6D7D9 12%,
+            #D6D7D9 18%,
+            #D6D7D9 20%,
+            #D6D7D9 22%,
+            #393D3E 23%,
+            #717274 42%,
+            #D7D8DA 74%,
+            #D7D8DA 81%,
+            #000100 83%,
+            #5C5D5F 86%,
+            #353638 89%,
+            #F4F8F9 93%,
+            #000100 94%);
+    top: -5.9rem;
+}
+.wristband p.center5{
+    background-image:
+    linear-gradient(360deg,
+        #D7D8DA 74%,
+        #D7D8DA 81%,
+        #D7D8DA 83%,
+        #D7D8DA 86%,
+        #353638 89%,
+        #F4F8F9 93%,
+        #D7D8DA 94%);
+        transform: rotate(180deg);
+top: -7.15rem;
 }
 .bothEdge p.left1,
 .bothEdge p.right1 {
     width: 4.4rem;
-    height: 6.8rem;
+    height: 6rem;
     /* border-radius: 500px 0% 0% 0%; */
     background-image:
         linear-gradient(180deg,
@@ -641,7 +674,7 @@ main {
             #7B7B7D 99%);
     position: absolute;
     left: 2.3rem;
-    top: -2rem;
+    top: -1rem;
     box-shadow: #333 5px 10px 7px;
 
 }
@@ -661,8 +694,6 @@ main {
     border-width: 0rem 0rem 9rem 2rem;
     border-color: transparent transparent transparent #333333;
     border-style: solid;
-
-
 }
 
 .bothEdge p.right1::after {
@@ -712,17 +743,34 @@ position: absolute;
 left: 6.8rem;
 border-radius: 10% 0% 0% 10%;
 
+
 }
+.bothEdge p.left2::after{
+    border-left: 0.5rem solid #333;
+    border-right: 0rem solid transparent;
+    left: 0;
+ }
 
 .bothEdge p.left3, .bothEdge p.right3{
-    top: -7rem;
+    top: -6.2rem;
+    height: 3rem;
+}
+.bothEdge p.left4, .bothEdge p.right4{
+    top: -7.5rem;
+    height: 2rem;
+  background-image:  linear-gradient(180deg,
+    #2D3132 5%,
+    #7B7B7D 0%,
+    #2D3132 6%,
+    #CFCFD1 30%,
+    #2D3132 0%,
+    #B1B2B4 9%);
+         box-shadow:
+    inset -1px 0 5px 0px rgba(0, 0, 0, 0.5),
+    inset 1px 0 1px 0px rgba(0, 0, 0, 0.5);
+    rotate: -2deg;
 }
 
-.bothEdge p.left2::after{
-border-left: 0.5rem solid #333;
-border-right: 0rem solid transparent;
-left: 0;
-}
 .wristband2{
     position: absolute;
     bottom: 0;
