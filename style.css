@@ -544,28 +544,36 @@ main {
 
 
 .wristband p.center1 {
-    width: 5rem;
-    height: 1rem;
+    width: 4.85rem;
+    height: 4rem;
     border-radius: 7% / 0 0 100% 100%;
-    background-image:
-        linear-gradient(180deg,
-            #9B9C9E 0%,
-            #D6D7D9 12%,
-            #000100 18%,
-            #161A1B 20%,
-            #363A3B 22%,
-            #393D3E 23%,
-            #717274 42%,
-            #D7D8DA 74%,
-            #D7D8DA 81%,
-            #000100 83%,
-            #5C5D5F 86%,
-            #353638 89%,
-            #F4F8F9 93%,
-            #000100 94%);
+        background: linear-gradient(180deg,
+            #F7F7F7 0%,
+            #575B5E 33%,
+            #000000 34%,
+            #000000 40%,
+            #EDEDEF 40%,
+            #EDEDEF 41%,
+            #000000 42%,
+            #202123 42%,
+            #878B8C 43%,
+            #000000 44%,
+            #45494A 45%,
+            #D9DADC 47%,
+            #000000 48%,
+            #000000 52%,
+            #D4D5D7 53%,
+            #E1E1E1 64%,
+            #E1E1E1 74%,
+            #9B9C9E 91%,
+            #000000 92%,
+            #000000 96%,
+            #A7A8AA 98%,
+            #222828 100%);
+            
     rotate: 360deg;
     position: absolute;
-    top: -1.8rem;
+    top: -3.3rem;
     left: 10rem;
 }
 
@@ -588,14 +596,40 @@ main {
     /* border-radius: 5% / 0 0 100% 100%; */
     border-radius: 20% 20% 20% 15%;
     position: absolute;
-    top: -1rem;
+    /* top: -1rem; */
     left: 5rem;
 }
+.wristband p.center3{
+    /* border-radius: 7% / 0 0 100% 100%; */
+    background-image:
+        linear-gradient(180deg,
+            #9B9C9E 0%,
+            #D6D7D9 12%,
+            #000100 18%,
+            #161A1B 20%,
+            #363A3B 22%,
+            #393D3E 23%,
+            #717274 42%,
+            #D7D8DA 74%,
+            #D7D8DA 81%,
+            #000100 83%,
+            #5C5D5F 86%,
+            #353638 89%,
+            #F4F8F9 93%,
+            #000100 94%);
+    /* rotate: 360deg; */
+    transform: rotate3d(100deg);
+    position: absolute;
+    top: -6.5rem;
+    left: 10.08rem;
+    width: 4.85rem;
+    height: 3rem;
 
+}
 .bothEdge p.left1,
 .bothEdge p.right1 {
-    width: 4rem;
-    height: 7rem;
+    width: 4.4rem;
+    height: 6.8rem;
     /* border-radius: 500px 0% 0% 0%; */
     background-image:
         linear-gradient(180deg,
@@ -606,14 +640,16 @@ main {
             #2D3132 80%,
             #7B7B7D 99%);
     position: absolute;
-    left: 2rem;
-    top: -1rem;
-    box-shadow: #333 0.5px 0px 10px;
+    left: 2.3rem;
+    top: -2rem;
+    box-shadow: #333 5px 10px 7px;
 
 }
 
 .bothEdge p.right1 {
-    left: 19rem;
+    left: 18.3rem;
+    box-shadow: #333 -4px 10px 7px;
+
 
 
 }
@@ -632,19 +668,16 @@ main {
 .bothEdge p.right1::after {
     content: '';
     position: absolute;
-    /* top right bottom left  */
 border-bottom: 9rem solid transparent;
 border-right: 2rem solid #333;
 border-left: 0rem solid transparent;
 border-top: 0rem solid transparent;
-/* border: transparent #333 transparent transparent;
-border-width: 0rem 2rem 9rem 0rem;
-border-style: solid; */
 right: 0;
 
 }
 
-.bothEdge p.right2{
+.bothEdge p.right2,
+.bothEdge p.left2{
     background-image:
     linear-gradient(180deg,
         #2D3132 5%,
@@ -653,17 +686,20 @@ right: 0;
         #CFCFD1 30%,
         #2D3132 80%,
         #7B7B7D 99%);
+             box-shadow:
+        inset -1px 0 1px 0px rgba(0, 0, 0, 0.5),
+        inset 1px 0 1px 0px rgba(0, 0, 0, 0.5);
     height: 4rem;
-    width: 3.8rem;
+    width: 3.35rem;
     position: absolute;
-    right: 6rem;
-    top: -4rem;
-    border-radius: 0% 20% 20% 0%;
+    right: 6.8rem;
+    top: -4.3rem;
+    border-radius: 0% 20% 10% 0%;
 
 }
-.bothEdge p.right2::after{
+.wristband .bothEdge p.right2::after,.bothEdge p.left2::after{
     content:'';
-    border-bottom: 4rem solid transparent;
+    border-bottom: 3rem solid transparent;
 border-right: 0.5rem solid #333;
 border-left: 0rem solid transparent;
 border-top: 0rem solid transparent;
@@ -672,18 +708,21 @@ position: absolute;
 }
 
 
+.bothEdge p.left2{
+left: 6.8rem;
+border-radius: 10% 0% 0% 10%;
 
+}
 
+.bothEdge p.left3, .bothEdge p.right3{
+    top: -7rem;
+}
 
-
-
-
-
-
-
-
-
-
+.bothEdge p.left2::after{
+border-left: 0.5rem solid #333;
+border-right: 0rem solid transparent;
+left: 0;
+}
 .wristband2{
     position: absolute;
     bottom: 0;
@@ -691,7 +730,10 @@ position: absolute;
     right:0 ;
     z-index: -1;
 }
-
+.wristband2 .bothEdge p.right2{
+    left: 14.9rem;
+    
+}
 /* https://codepen.io/chrisota/pen/OJJbdbR */
 /* background: linear-gradient(180deg,
             #F7F7F7 0%,
@@ -722,3 +764,27 @@ position: absolute;
         inset 1px 0 1px 0px rgba(0, 0, 0, 0.5);
         
             Has a special purpose*/
+
+
+            /*  border-radius: 7% / 0 0 100% 100%;
+    background-image:
+        linear-gradient(180deg,
+            #9B9C9E 0%,
+            #D6D7D9 12%,
+            #000100 18%,
+            #161A1B 20%,
+            #363A3B 22%,
+            #393D3E 23%,
+            #717274 42%,
+            #D7D8DA 74%,
+            #D7D8DA 81%,
+            #000100 83%,
+            #5C5D5F 86%,
+            #353638 89%,
+            #F4F8F9 93%,
+            #000100 94%);
+    rotate: 360deg;
+    
+
+    from github center1
+    */
