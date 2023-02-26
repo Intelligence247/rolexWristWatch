@@ -352,10 +352,7 @@ main {
     width: 2.8rem;
     height: 2rem;
     position: absolute;
-    /* background: rgba(255, 255, 255, 0.1); */
-    /* background: linear-gradient(45deg, rgba(255, 255, 255, .1), rgba(255, 255, 250, .2)); */
-    /* background: repeating-linear-gradient(60deg, transparent, transparent, transparent, transparent, transparent, rgba(255, 255, 255, 0.009), transparent 40%); */
-    background-color: rgba(255, 255, 255, 0.009);
+     background-color: rgba(255, 255, 255, 0.009);
     opacity: .4;
     z-index: 30;
     border: 0.2px solid rgba(255, 255, 255, 0.01);
@@ -660,7 +657,6 @@ top: -7.15rem;
 .bothEdge p.right1 {
     width: 4.4rem;
     height: 6rem;
-    /* border-radius: 500px 0% 0% 0%; */
     background-image:
         linear-gradient(180deg,
             #2D3132 5%,
@@ -687,7 +683,6 @@ top: -7.15rem;
 .bothEdge p.left1::after {
     content: '';
     position: absolute;
-    /* top right bottom left  */
     border-width: 0rem 0rem 9rem 2rem;
     border-color: transparent transparent transparent #333333;
     border-style: solid;
@@ -797,9 +792,6 @@ border-radius: 10% 0% 0% 10%;
     #E1E1E1 96%,
     #A7A8AA 98%,
     #E1E1E1 100%);
-     /* box-shadow:
-inset -1px 0 1px 0px rgba(0, 0, 0, 0.5),
-inset 1px 0 1px 0px rgba(0, 0, 0, 0.5); */
 box-shadow: 2px 0px -10px;
 z-index: -1;
 }
@@ -925,7 +917,6 @@ inset 1px 0 1px 0px rgba(0, 0, 0, 0.5);
     left: 14.9rem;
     
 }
-/* https://codepen.io/chrisota/pen/OJJbdbR */
 /* background: linear-gradient(180deg,
             #F7F7F7 0%,
             #575B5E 33%,
