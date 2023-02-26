@@ -771,6 +771,112 @@ border-radius: 10% 0% 0% 10%;
     rotate: -2deg;
 }
 
+.setter p.settertop{
+    height: 2.8rem;
+    width: 4rem;
+    background-color: red;
+    position: absolute;
+    right: -1.5rem;
+    top: 8.3rem;
+    background: linear-gradient(90deg,
+    #F7F7F7 0%,
+    #575B5E 33%,
+    #000000 34%,
+    #000000 40%,
+    #EDEDEF 40%,
+    #EDEDEF 41%,
+    #000000 42%,
+    #202123 42%,
+    #878B8C 43%,
+    #000000 44%,
+    #45494A 45%,
+    #D9DADC 47%,
+    #000000 48%,
+    #000000 52%,
+    #D4D5D7 53%,
+    #E1E1E1 64%,
+    #E1E1E1 74%,
+    #9B9C9E 91%,
+    #000000 92%,
+    #E1E1E1 96%,
+    #A7A8AA 98%,
+    #E1E1E1 100%);
+     /* box-shadow:
+inset -1px 0 1px 0px rgba(0, 0, 0, 0.5),
+inset 1px 0 1px 0px rgba(0, 0, 0, 0.5); */
+box-shadow: 2px 0px -10px;
+z-index: -1;
+}
+.setter .settertop::after,
+.setter .settertop::before{
+    content: '';
+    border-left: 2rem solid transparent;
+    border-top: 1rem solid #333;
+    border-right: 2rem solid transparent;
+    position: absolute;
+    right: -2rem;
+}
+.setter .settertop::before{
+    border-top: 1rem solid #333;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+.setter p.setterbottom{
+top: 14rem;
+}
+
+.setter p.settercenter{
+    height: 4rem;
+    width: 2rem;
+    background-image: 
+    linear-gradient(180deg,
+      #7F8384 2%,
+      #7B7B7D 5%,
+      #B1B2B4 6%,
+      #CFCFD1 30%,
+      #C4C4C6 60%,
+      #2D3132 89%,
+      #3F4042 94%,
+      #ECEDEF 96%,
+      #C3C3C5 97%,
+      #606163 99%);
+    position: absolute;
+    right: -2rem;
+    bottom: 10.5rem;
+    z-index: -2;
+}
+
+.setter p.settercenter::after{
+    content: '';
+    position: absolute;
+    height: 4rem;
+    width: 1rem;
+    right: 0;
+    background-color: white;
+    border-radius: 50%;
+    background-image: 
+      linear-gradient(180deg,
+        #9B9C9E 0%,
+        #D6D7D9 12%,
+        #3B3F40 18%,
+        #161A1B 20%,
+        #363A3B 22%,
+        #393D3E 23%,
+        #717274 42%,
+        #D7D8DA 74%,
+        #D7D8DA 81%,
+        #5D6162 83%,
+        #5C5D5F 86%,
+        #353638 89%,
+        #F4F8F9 93%,
+        #000100 94%);
+    
+    box-shadow:
+        inset -1px 0 2px 0 rgba(255,255,255,0.5),
+        inset 1px 0 2px 0 rgba(255,255,255,0.5);
+}
+
+
 .wristband2{
     position: absolute;
     bottom: 0;
