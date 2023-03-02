@@ -25,8 +25,9 @@ for (let i = 0; i <= 12; i++) {
     bigdots.innerHTML += `<p style="--dots:${i};"></p>`
     if (i === 10) {
         setInterval(() => {
-            let date = new Date()
-            bigdots.innerHTML += `<p class="ten">${date.getDate()}</p>`
+            let date = new Date().getDate()
+           const fDate = date < 10 ? '0'+ date : date
+            bigdots.innerHTML += `<p class="ten">${fDate}</p>`
         }, 100);
 
     }
