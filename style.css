@@ -7,10 +7,11 @@
 body {
     background-color: #333;
     display: grid;
-    place-items: center;
+    place-content: center;
     /* height: 40rem; */
     /* width: 85rem; */
     width: 100vw;
+    overflow: hidden;
     height: 100vh;
 
 }
@@ -20,6 +21,8 @@ main {
     width: max-content;
     height: max-content;
     position: relative;
+    scale: 0.8;
+
 }
 
 .clockcirc1 {
@@ -970,3 +973,9 @@ inset 1px 0 1px 0px rgba(0, 0, 0, 0.5);
 
     from github center1
     */
+
+    @media(max-width: 645px) {
+        main{
+            scale: 0.65;
+        }
+    }
